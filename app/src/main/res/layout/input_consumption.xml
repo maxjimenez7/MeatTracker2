@@ -1,36 +1,64 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
     <EditText
-        android:id="@+id/editTextNumber_main_input_beef_consumption"
+        android:id="@+id/editTextNumber_input_consumption_beef"
         android:layout_width="345dp"
         android:layout_height="61dp"
         android:layout_marginStart="5dp"
         android:layout_marginTop="138dp"
         android:layout_marginEnd="61dp"
+        android:layout_marginBottom="20dp"
         android:ems="10"
+        android:hint="How many pounds of beef do you eat"
         android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/editTextNumber_input_consumption_chicken"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:text="How many pounds of beef do you eat" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/editTextNumber_main_input_beef_consumption2"
+        android:id="@+id/editTextNumber_input_consumption_chicken"
         android:layout_width="347dp"
         android:layout_height="65dp"
         android:layout_marginStart="5dp"
         android:layout_marginTop="20dp"
         android:layout_marginEnd="59dp"
+        android:layout_marginBottom="20dp"
         android:ems="10"
+        android:hint="How many pounds of chicken do you eat"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/editTextNumber_input_consumption_pork"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNumber_input_consumption_beef" />
+
+    <Button
+        android:id="@+id/button_input_consumption_finish"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="89dp"
+        android:text="Button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextNumber_input_consumption_pork"
+        android:layout_width="334dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="77dp"
+        android:ems="10"
+        android:hint="How many pounds of pork do you eat"
         android:inputType="number"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextNumber_main_input_beef_consumption"
-        tools:text="How many pounds of chicken do you eat" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextNumber_input_consumption_chicken" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
