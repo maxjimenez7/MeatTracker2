@@ -6,6 +6,7 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.input_consumption.*
+import kotlinx.android.synthetic.main.results_consumption.*
 
 
 class MainActivity : AppCompatActivity() {
@@ -26,9 +27,18 @@ class MainActivity : AppCompatActivity() {
 
             }
             startActivity(intent)
+        }
 
+        button_input_consumption_results.setOnClickListener{
+            //textView_results.add
+            // (editTextNumber_input_consumption_pork)
+            var pork : Int = editTextNumber_input_consumption_pork.text.toString().toInt()
+            var beef : Int = editTextNumber_input_consumption_beef.text.toString().toInt()
+            var poultry : Int = editTextNumber_input_consumption_poultry.text.toString().toInt()
         }
     }
+
+    // android.text.TextWatcher
 
     fun inputConsumption(){
         var beef : Int = editTextNumber_input_consumption_beef.text.toString().toInt()
