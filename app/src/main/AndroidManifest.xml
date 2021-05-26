@@ -16,6 +16,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity android:name=".InputConsumption"></activity>
+        <activity android:name=".ResultsConsumption"></activity>
     </application>
 
 </manifest>
