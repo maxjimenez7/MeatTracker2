@@ -25,7 +25,6 @@ class MainActivity : AppCompatActivity() {
             // add listener to edit text fields called textwatcher
             val intent = Intent(this, InputConsumption::class.java).apply {
                 Toast.makeText(this@MainActivity, "Input consumption now", Toast.LENGTH_LONG).show()
-
             }
             startActivity(intent)
         }
